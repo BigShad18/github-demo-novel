@@ -1,0 +1,43 @@
+#Git Lessons
+
+
+
+#3-7-2025 Command used
+
+git -- version #gives the git version
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" -- to install Homebrew in Mac
+brew help #list some help one can find using the brew pachage installer
+echo >> /Users/skadiayi/.zprofile   #command to paste after i installed homebrew
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/skadiayi/.zprofile #command ran after the command above
+eval "$(/opt/homebrew/bin/brew shellenv)"
+brew install git latest   # to install the latest version of git then close the terminal and reopen it to be able to have the latest version
+git --version #to obtain the latest version
+git config --global user.name "Shadrac Kadiayi" #Set the name of your git profile 
+git config user.name #ask git what my global user name is
+git config --global user.email "kadiayi.inc@gmail.com" #to configure global email
+git config user.email #ask git what my global email is
+
+##### Terminal Crash Course
+
+ls #list all the folders and files in the directory you're in
+ls -a #the flag -a shows all the hidden folders and files in a directory
+cd abc #takes you inside the folder you abc you specified
+cd .. #Takes you to 2 folders above
+vim abc #should be used for files it open a text file, allows you to make edit and you can quit by typing :q to quit :wq to write and save :q! to force quit
+pwd #shows you the directory you're in
+ls abc #when you are on a partiular directory and you type ls and it shows you a folder abc you cay type ls abc to see what inside folder abc
+clear #clean your screen 
+open . #will open the directory in which you currently are in finder
+touch #to create a file you can also creat multiple files at once touch orange.py red.txt yellow.js | You can also create a file in a different folder as long as you reference it correctly --> touch Documents/Personal/cyan.pdf this will create an empty pdf in the Personal folder
+mkdir #to help create a directory/folder mkdir abc : will create an empty folder name abc in your current directory | you can also create multiple empty directories at once mkdir abc def ghi : will create 3 separate empty folder abc, def and ghi
+rm abc.type #the rm command will delete/remove the file abc.type
+rm rf #this is how you delete a folder you have to add the flag rf recursive enforce
+
+
+##### Git Basics
+
+git config --global init.defaultBranch <name> #call: this command To configure the initial branch name to use in all of your new repositories, which will suppress this warning. Using 'master' as the name for the initial branch. This default branch name is subject to change. Names commonly chosen instead of 'master' are 'main', 'trunk' and 'development'.
+git branch -m <name> #The just-created branch can be renamed via this command
+git init #initializes a repository in a new directory/project
+git status #tells you if you're in a repo or not 
+git config --global status.showUntrackedFiles all #this will help show status of all untracked files inside of folders and subfolders
